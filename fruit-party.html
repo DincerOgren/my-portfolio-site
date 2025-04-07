@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Emre Dincer Ogren Portfolio - FruitParty</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+<!-- Social Sidebar -->
+<div class="social-sidebar">
+    <a href="https://gokcinosman.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+        <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+    </a>
+    <a href="https://www.linkedin.com/in/osmangokcin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/gokcinosman" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="https://img.icons8.com/?size=100&amp;id=12599&amp;format=png&amp;color=000000" alt="GitHub">
+    </a>
+</div>
+
+   <!-- Page Navbar -->
+   <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Emre Dincer Ogren - Fruit Party</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <!--
+            <li class="item">
+                <a class="link" href="#blog">Blog</a>
+            </li>
+            -->
+            
+            <li class="item">
+                <a class="link" href="index.html#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<section id="project-details" class="section" style="padding-top: 200px;">
+    <div class="container">
+      <h5 class="game-section-title">Fruit Party</h5>
+  
+      <div class="video-wrapper">
+      <iframe src="https://youtube.com/embed/UTVv5LjoMFU?feature=share" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section id="project-gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/imgs/slot1.png" alt="Gameplay 1">
+                <img src="assets/imgs/slot2.png" alt="Gameplay 2">
+                <img src="assets/imgs/slot3.png" alt="Gameplay 3">
+                <img src="assets/imgs/slot4.png" alt="Gameplay 4">
+                <img src="assets/imgs/slot5.png" alt="Gameplay 5">
+            </div>
+        </div>
+    </section>
+    <div class="project-description">
+        <h4>Overview</h4>
+            <p class="project-description">
+            Fruit Party is a 2D slot machine prototype developed as a technical showcase of slot game mechanics. 
+            As the sole developer, I managed every aspect of the project — from core system design to implementation and testing. 
+            The goal was to create a fully functional and easily adjustable slot game with customizable paylines, 
+            bet handling, and visual feedback tools to demonstrate win conditions and balancing logic.
+            </p>
+
+
+        <br>
+        <br><br>
+    
+        <h4>Technical Details</h4>
+            <ul>
+            <li>
+                <strong>Payline Generator System:</strong> Designed an editor-friendly 3x5 grid tool that allows developers to create, 
+                customize, and save unique paylines. These configurations are stored and dynamically used during spin evaluation.
+            </li>
+            <li>
+                <strong>Bet Manager:</strong> Manages player bet amounts, validating input and ensuring clean transitions between spins, 
+                with built-in error handling for invalid bets.
+            </li>
+            <li>
+                <strong>Spin Manager:</strong> Controls the full spinning process, from triggering animation to evaluating results, 
+                ensuring a fair and consistent user experience.
+            </li>
+            <li>
+                <strong>Matching Algorithm:</strong> Implements logic to detect symbol matches along active paylines. 
+                Connected to the indicator system for visual feedback.
+            </li>
+            <li>
+                <strong>Indicator Tool:</strong> Highlights winning paylines after a spin, giving users clear, 
+                immediate visual confirmation of matching symbols.
+            </li>
+            <li>
+                <strong>Quick Spin Feature:</strong> Adds an optional gameplay toggle for faster spins, 
+                mimicking real-world quick play features for faster engagement.
+            </li>
+            <li>
+                <strong>Symbol Probability Balancing:</strong> Allows developers to tweak the spawn rates of 
+                individual symbols to fine-tune gameplay difficulty and reward frequency.
+            </li>
+            <li>
+                <strong>Scatter Chance System:</strong> A flexible system to adjust scatter symbol frequency, 
+                allowing for fine balancing of bonus triggers or special rounds.
+            </li>
+            </ul>
+
+        <br>
+    
+        <h4>Technologies Used</h4>
+        <ul>
+            <li><strong>Game Engine:</strong> Unity</li>
+            <li><strong>Programming Language:</strong> C#</li>
+            <li><strong>Development Tools:</strong> Visual Studio, GitHub</li>
+            <li><strong>UI Framework:</strong> Unity UI & TextMeshPro</li>
+        </ul>
+
+        <br>
+<h4>View Project</h4>
+<p class="project-description">
+    You can explore the full project and source code on 
+    <a href="https://github.com/DincerOgren/Slot-Game"  target="_blank" rel="noopener noreferrer"><strong>GitHub</strong></a> , 
+    <a href="https://dincerogren.itch.io/fruit-party"  target="_blank" rel="noopener noreferrer"><strong>Itch.io</strong></a>
+</p>
+
+    </div>
+    
+    </div>
+  </section>
+ 
+
+
+
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Meyawo js -->
+<script src="assets/js/meyawo.js"></script>
+
+
+</body>
+</html>

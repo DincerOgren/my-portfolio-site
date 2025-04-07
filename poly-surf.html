@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Emre Dincer Ogren Portfolio - PolySurf</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+<!-- Social Sidebar -->
+<div class="social-sidebar">
+    <a href="https://gokcinosman.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+        <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+    </a>
+    <a href="https://www.linkedin.com/in/osmangokcin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/gokcinosman" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="https://img.icons8.com/?size=100&amp;id=12599&amp;format=png&amp;color=000000" alt="GitHub">
+    </a>
+</div>
+
+   <!-- Page Navbar -->
+   <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Emre Dincer Ogren - Poly Surf</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <!--
+            <li class="item">
+                <a class="link" href="#blog">Blog</a>
+            </li>
+            -->
+            
+            <li class="item">
+                <a class="link" href="index.html#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<section id="project-details" class="section" style="padding-top: 200px;">
+    <div class="container">
+      <h5 class="game-section-title">Poly Surf</h5>
+  
+      <div class="video-wrapper">
+      <iframe src="https://youtube.com/embed/-8OVPPsHuDs?feature=share" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section id="project-gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/imgs/poly1.png" alt="Gameplay 1">
+                <img src="assets/imgs/poly2.png" alt="Gameplay 2">
+                <img src="assets/imgs/poly3.png" alt="Gameplay 3">
+                <img src="assets/imgs/poly4.png" alt="Gameplay 4">
+                <img src="assets/imgs/poly5.png" alt="Gameplay 5">
+                <img src="assets/imgs/poly6.png" alt="Gameplay 6">
+            </div>
+        </div>
+    </section>
+    <div class="project-description">
+        <h4>Overview</h4>
+        <p class="project-description">
+            In this budget-friendly clone of Subway Surfers, I designed and implemented core gameplay systems to ensure fluid mechanics, replayability, and performance optimization. The game features lane-based movement, dynamic level generation, character customization, and a reactive enemy system — all crafted to mirror the feel of an endless runner while being technically efficient and expandable.
+        </p>
+
+        <br>
+        <p class="project-description"><em>🔧 Work in Progress: This project is still under active development. Some features or visual elements may appear incomplete.</em></p>
+    
+        <br><br>
+    
+        <h4>Technical Details</h4>
+        <ul>
+            <li>
+                <strong>Object Pooling:</strong> Obstacles, coins, and floor tiles are managed through 
+                a centralized object pooling system to reduce runtime instantiations and garbage collection overhead.
+            </li>
+            <li>
+                <strong>Procedural Level Generation:</strong> The game dynamically assembles level chunks at runtime using a 
+                modular chunk system. Each chunk is pre-designed and seamlessly connected based on spawn points and markers.
+            </li>
+            <li>
+                <strong>Player Movement:</strong> Supports 3-lane side switching with smooth transitions, 
+                as well as jumping and ducking using a combination of swipe detection and keyboard input. 
+                Movement speed increases gradually over time for difficulty scaling.
+            </li>
+            <li>
+                <strong>Enemy AI:</strong> An enemy character chases the player and adjusts its speed 
+                based on the player's velocity and crash events. Upon collisions, 
+                the player enters a "recovery" state rather than an immediate game over, allowing for more forgiving gameplay.
+            </li>
+            <li>
+                <strong>Missions System:</strong> A mission manager tracks tasks like collecting coins or traveling distance, 
+                promoting long-term engagement through progression goals.
+            </li>
+            <li>
+                <strong>Customization:</strong> Players can unlock and select different characters and hoverboards. 
+                The customization system loads saved preferences and applies them at runtime.
+            </li>
+            <li>
+                <strong>Save System:</strong> All progress, including coins, unlocked items, selected skins, and mission states,
+                 is saved locally using a JSON-based system powered by Unity’s <u>JsonUtility.Data</u>
+                 is serialized and stored securely between sessions.
+            </li>
+            <li>
+                <strong>Skate System:</strong> The skate system allows the player to activate a hoverboard-like item, 
+                similar to the skateboard feature in Subway Surfers. Once activated, the player becomes temporarily invincible to obstacles. 
+                Upon collision, the skate is destroyed instead of the player, preventing game-over. Additionally, the skate emits a destruction effect that clears nearby obstacles, 
+                giving the player a brief moment to recover and reposition. This system enhances gameplay dynamics and adds a strategic layer to player survival.</li>
+            <li>
+                <strong>Input Handling:</strong> Both touch (swipe) and keyboard input are supported, abstracted through a custom input manager for cross-platform consistency.
+            </li>
+            <li>
+                <strong>UI Integration:</strong> Real-time updates of score, distance, coins, and missions are integrated into the UI using Unity's UI system (TextMeshPro and Canvas components).
+            </li>
+        </ul>
+    
+        <br>
+    
+        <h4>Technologies Used</h4>
+        <ul>
+            <li><strong>Game Engine:</strong> Unity</li>
+            <li><strong>Programming Language:</strong> C#</li>
+            <li><strong>Data Persistence:</strong> JSON-based local storage</li>
+            <li><strong>Development Tools:</strong> Visual Studio, GitHub</li>
+            <li><strong>UI Framework:</strong> Unity UI & TextMeshPro</li>
+        </ul>
+
+        <br>
+<h4>View Project</h4>
+<p class="project-description">
+    You can explore the full project and source code on 
+    <a href="https://github.com/DincerOgren/Subway-Clone"  target="_blank" rel="noopener noreferrer">GitHub</a>.
+</p>
+
+    </div>
+    
+    </div>
+  </section>
+ 
+
+
+
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Meyawo js -->
+<script src="assets/js/meyawo.js"></script>
+
+
+</body>
+</html>

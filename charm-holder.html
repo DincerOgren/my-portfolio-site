@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Emre Dincer Ogren Portfolio - Enigmat</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+<!-- Social Sidebar -->
+<div class="social-sidebar">
+    <a href="https://gokcinosman.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+        <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+    </a>
+    <a href="https://www.linkedin.com/in/osmangokcin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/gokcinosman" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="https://img.icons8.com/?size=100&amp;id=12599&amp;format=png&amp;color=000000" alt="GitHub">
+    </a>
+</div>
+
+   <!-- Page Navbar -->
+   <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Emre Dincer Ogren - Enigmat</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <!--
+            <li class="item">
+                <a class="link" href="#blog">Blog</a>
+            </li>
+            -->
+            
+            <li class="item">
+                <a class="link" href="index.html#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<section id="project-details" class="section" style="padding-top: 200px;">
+    <div class="container">
+      <h5 class="game-section-title">Enigmat</h5>
+  
+      <div class="video-wrapper">
+      <iframe src="https://youtube.com/embed/F9De2hnpOLI?feature=share" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section id="project-gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/imgs/charm1.png" alt="Gameplay 1">
+                <img src="assets/imgs/charm2.png" alt="Gameplay 2">
+                <img src="assets/imgs/charm3.png" alt="Gameplay 3">
+                <img src="assets/imgs/charm4.png" alt="Gameplay 4">
+            </div>
+        </div>
+    </section>
+    <div class="project-description">
+        <h4>Overview</h4>
+        <p class="project-description">
+            Enigmat is a first-person magical combat prototype developed during a week-long bootcamp. 
+            As the team leader, I was responsible for core gameplay mechanics, combat systems, 
+            and integration tasks. The main goal was to explore dynamic spellcasting mechanics and enemy encounters using a modular, 
+            scalable architecture. Despite limited time and resources, we successfully delivered a working prototype featuring diverse 
+            elemental abilities, enemy AI, and responsive player feedback systems.</p>
+
+        <br>
+        <br><br>
+    
+        <h4>Technical Details</h4>
+        <ul>
+            <li>
+                <strong>Elemental Ring System:</strong> Implemented a ring selection mechanic allowing players to switch between different 
+                elemental types (fire, ice, lightning). 
+                Each ring dynamically updated both gameplay logic and the UI, ensuring a seamless player experience.
+            </li>
+            <li>
+                <strong>Modular Spell System (ScriptableObjects):</strong> Designed a highly extensible spell system using Unity’s 
+                ScriptableObject architecture. Each spell encapsulated data like damage, cooldown, visual effects, and behaviors, 
+                enabling future expansion with minimal code changes.
+            </li>
+            <li>
+                <strong>Enemy AI:</strong> Developed basic yet functional enemy behaviors for two types: 
+                <em>mages</em>, who cast ranged spells at the player, and <em>skeletons</em>, who engage in close combat. 
+                Both types use detection radius to switch between patrol, chase, and attack states based on player proximity.
+              </li>
+            <li>
+                <strong>Elemental Projectile System:</strong> Developed core ranged combat mechanics. 
+                Based on the selected ring, players could launch element-specific projectiles with different effects (e.g., burn, freeze, shock).
+                Projectiles were handled with modular prefabs for easy tuning.
+            </li>
+            <li>
+                <strong>Special Ability Integration:</strong> Integrated a sky-based special ability system in collaboration with teammates. 
+                Using an indicator system, players could target zones to summon environmental strikes like lightning bolts, 
+                meteors, or icicles.
+            <li>
+                <strong>Health System:</strong> Created a health system for the player, 
+                including a visual health bar that accurately reflects the player’s health status, 
+                providing clear feedback during gameplay.
+            </li>
+            <li>
+                <strong>Animation Integration:</strong>Ensured all combat, movement, and spellcasting animations worked smoothly. 
+                Integrated Unity’s Animator Controller with blend trees and trigger parameters to connect gameplay logic with visual feedback.
+            </li>
+            
+        </ul>
+    
+        <br>
+    
+        <h4>Technologies Used</h4>
+        <ul>
+            <li><strong>Game Engine:</strong> Unity</li>
+            <li><strong>Programming Language:</strong> C#</li>
+            <li><strong>Development Tools:</strong> Visual Studio, GitHub</li>
+            <li><strong>UI Framework:</strong> Unity UI & TextMeshPro</li>
+        </ul>
+
+        <br>
+<h4>View Project</h4>
+<p class="project-description">
+    You can explore the full project and source code on 
+    <a href="https://github.com/IMetex/Enigmat"  target="_blank" rel="noopener noreferrer"><strong>GitHub</strong></a> , 
+    <a href="https://metex.itch.io/enigmat"  target="_blank" rel="noopener noreferrer"><strong>Itch.io</strong></a>
+</p>
+
+    </div>
+    
+    </div>
+  </section>
+ 
+
+
+
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Meyawo js -->
+<script src="assets/js/meyawo.js"></script>
+
+
+</body>
+</html>

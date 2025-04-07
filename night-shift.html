@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Emre Dincer Ogren Portfolio - FruitParty</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+<!-- Social Sidebar -->
+<div class="social-sidebar">
+    <a href="https://gokcinosman.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+        <img src="https://static.itch.io/images/itchio-textless-white.svg" alt="Itch.io">
+    </a>
+    <a href="https://www.linkedin.com/in/osmangokcin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/gokcinosman" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="https://img.icons8.com/?size=100&amp;id=12599&amp;format=png&amp;color=000000" alt="GitHub">
+    </a>
+</div>
+
+   <!-- Page Navbar -->
+   <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">Emre Dincer Ogren - Night Shift</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html#portfolio">Portfolio</a>
+            </li>
+            <!--
+            <li class="item">
+                <a class="link" href="#blog">Blog</a>
+            </li>
+            -->
+            
+            <li class="item">
+                <a class="link" href="index.html#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<section id="project-details" class="section" style="padding-top: 200px;">
+    <div class="container">
+      <h5 class="game-section-title">Night Shift</h5>
+  
+      <div class="video-wrapper">
+      <iframe src="https://youtube.com/embed/wtOOkE8e6Ic?feature=share" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section id="project-gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/imgs/night1.png" alt="Gameplay 1">
+                <img src="assets/imgs/night2.png" alt="Gameplay 2">
+                <img src="assets/imgs/night3.png" alt="Gameplay 3">
+                <img src="assets/imgs/night4.png" alt="Gameplay 4">
+                <img src="assets/imgs/night5.png" alt="Gameplay 5">
+            </div>
+        </div>
+    </section>
+    <div class="project-description">
+        <h4>Overview</h4>
+      <p class="project-description">
+        <em>Night Shift</em> is a 3D top-down action RPG built upon systems inspired by GameDev.TV’s RPG course. 
+        In this solo development project, I designed and implemented multiple core systems including point-and-click movement, 
+        dynamic enemy AI, a robust inventory and equipment framework, and scalable combat mechanics. The project focuses on providing 
+        fluid gameplay, intuitive controls, and a strong foundation for stat-based progression and wave-based survival mechanics.
+      </p>
+
+
+        <br>
+        <br><br>
+    
+        <h4>Technical Details</h4>
+      <ul>
+        <li>
+          <strong>Movement System:</strong> Implemented a point-and-click movement system using Unity’s NavMeshAgent. 
+          Players can navigate by clicking on terrain, offering intuitive and responsive control.
+        </li>
+        <li>
+          <strong>Contextual Cursor System:</strong> Developed a custom cursor handler that dynamically switches the cursor sprite based on context 
+          — including UI hover, interactable objects, and enemies — improving player feedback and interaction clarity.
+        </li>
+        <li>
+          <strong>Inventory System:</strong> Created a modular inventory system that supports storing, equipping, 
+          and using various item types. Items are categorized into usable (e.g., potions) and equipable (e.g., armor, weapons).
+        </li>
+        <li>
+          <strong>Equip Slots:</strong> Players can assign gear to specific slots. Equipping updates the character’s 
+          attributes in real-time and affects gameplay such as defense or damage output.
+        </li>
+        <li>
+          <strong>Weapon System:</strong> Designed a flexible weapon framework using Scriptable Objects. Each weapon 
+          includes custom attributes (damage, attack range, icon, animation override, prefab) and is easily extendable.
+        </li>
+        <li>
+          <strong>Enemy AI:</strong> Enemies patrol and detect the player within a defined radius. Once aggroed, 
+          they chase and attack, triggering nearby enemies as well. Attack types vary (melee or ranged) and use animation overrides.
+        </li>
+        <li>
+          <strong>Stat and Leveling System:</strong> Built a scalable stat and level system for both players 
+          and enemies. Stats such as health, damage, and XP scale dynamically with level.
+        </li>
+        <li>
+          <strong>Wave System:</strong> Introduced a wave-based spawning system that increases game difficulty over 
+          time by upgrading enemy levels and types with each completed wave.
+        </li>
+        <li>
+          <strong>Performance Optimization:</strong> To ensure smooth performance, I implemented an object visibility 
+          system that disables off-screen objects and reduces light intensity for unused light sources.
+        </li>
+      </ul>
+
+        <br>
+    
+        <h4>Technologies Used</h4>
+        <ul>
+            <li><strong>Game Engine:</strong> Unity</li>
+            <li><strong>Programming Language:</strong> C#</li>
+            <li><strong>Development Tools:</strong> Visual Studio, GitHub</li>
+            <li><strong>UI Framework:</strong> Unity UI & TextMeshPro</li>
+        </ul>
+
+        <br>
+<h4>View Project</h4>
+<p class="project-description">
+    You can explore the full project on 
+    <a href="https://dincerogren.itch.io/night-shift"  target="_blank" rel="noopener noreferrer"><strong>Itch.io</strong></a>
+</p>
+
+    </div>
+    
+    </div>
+  </section>
+ 
+
+
+
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Meyawo js -->
+<script src="assets/js/meyawo.js"></script>
+
+
+</body>
+</html>
