@@ -12399,9 +12399,11 @@ pre .code {
 
 .gallery-grid img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  height: 100%;
+  object-fit: contain;  /* cover yerine bu */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #1e1e1e; /* boşluk olursa çirkin durmasın diye */
 }
 
 .gallery-grid img:hover {
